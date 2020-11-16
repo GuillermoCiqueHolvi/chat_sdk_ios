@@ -15,10 +15,6 @@ let package = Package(
         .package(url: "https://github.com/GuillermoCiqueHolvi/chat_providers_sdk_ios", .upToNextMajor(from: "2.9.1"))
     ],
     targets: [
-        .binaryTarget(
-            name: "ChatSDK",
-            url: "https://github.com/GuillermoCiqueHolvi/chat_sdk_ios/raw/master/ChatSDK.zip",
-            checksum: "69a1fc5c0810f65c8a28999455fa488a58523023f096d55cb0ff7002a238a147"
-        )
+        .binaryTarget(name: "ChatSDK", path: "ChatSDK.xcframework")
     ]
 )
