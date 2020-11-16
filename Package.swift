@@ -17,8 +17,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "ChatSDK",
-            url: "https://github.com/GuillermoCiqueHolvi/chat_sdk_ios/archive/2.9.1.zip",
-            checksum: "8e7aed62fca70030f6cd7c76f389070ab7f0a31c3fea3c2ed9f2db6757af4d59"
+            url: "https://github.com/GuillermoCiqueHolvi/chat_sdk_ios/archive/2.9.0.zip",
+            checksum: "3cb3f34344267d2495418c4cfe42e2631f7150c64a5f6ecac19274cde42dde5c"
         )
     ]
 )
