@@ -18,12 +18,12 @@ let package = Package(
         .binaryTarget(
             name: "ChatSDK",
             dependencies: [
-                     .product(name: "SDKConfigurations", package: "ZendeskSDKConfigurations"),
-                     .product(name: "CommonUISDK", package: "ZendeskCommonUISDK"),
-                     .product(name: "MessagingSDK", package: "ZendeskMessagingSDK"),
-                     .product(name: "MessagingAPI", package: "ZendeskMessagingAPI"),
-                     .product(name: "ChatProvidersSDK", package: "ZendeskChatProvidersSDK")
-             ], 
+                .product(name: "SDKConfigurations", package: "ZendeskSDKConfigurations"),
+                .product(name: "CommonUISDK", package: "ZendeskCommonUISDK"),
+                .product(name: "MessagingSDK", package: "ZendeskMessagingSDK"),
+                .product(name: "MessagingAPI", package: "ZendeskMessagingAPI"),
+                .product(name: "ChatProvidersSDK", package: "ZendeskChatProvidersSDK")
+            ],
             path: "ChatSDK.xcframework"
         )
     ]
