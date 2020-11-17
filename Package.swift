@@ -7,24 +7,7 @@ let package = Package(
     products: [
         .library(name: "ChatSDK", targets: ["ChatSDK"]),
     ],
-     dependencies: [
-         .package(url: "https://github.com/GuillermoCiqueHolvi/sdkconfigurations_sdk_ios", .upToNextMajor(from: "1.1.7")),
-         .package(url: "https://github.com/GuillermoCiqueHolvi/commonui_sdk_ios", .upToNextMajor(from: "6.0.1")),
-         .package(url: "https://github.com/GuillermoCiqueHolvi/messaging_sdk_ios", .upToNextMajor(from: "3.8.1")),
-         .package(url: "https://github.com/GuillermoCiqueHolvi/messagingapi_sdk_ios", .upToNextMajor(from: "3.8.1")),
-         .package(url: "https://github.com/GuillermoCiqueHolvi/chat_providers_sdk_ios", .upToNextMajor(from: "2.9.1"))
-     ],
     targets: [
-        .binaryTarget(
-            name: "ChatSDK",
-            dependencies: [
-                .product(name: "SDKConfigurations", package: "ZendeskSDKConfigurations"),
-                .product(name: "CommonUISDK", package: "ZendeskCommonUISDK"),
-                .product(name: "MessagingSDK", package: "ZendeskMessagingSDK"),
-                .product(name: "MessagingAPI", package: "ZendeskMessagingAPI"),
-                .product(name: "ChatProvidersSDK", package: "ZendeskChatProvidersSDK")
-            ],
-            path: "ChatSDK.xcframework"
-        )
+        .binaryTarget(name: "ChatSDK", path: "ChatSDK.xcframework")
     ]
 )
